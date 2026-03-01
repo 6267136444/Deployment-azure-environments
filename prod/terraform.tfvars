@@ -1,6 +1,6 @@
 location            = "Central India"
 resource_group_name = "rg-prod-linuxvm"
 vm_name             = "prod-linux-vm"
-vm_size             = "prod-linux-size"
+vm_size             = "Standard_D2s_v3"
 admin_username      = "azureuser"
 admin_password      = "Password@1234!"
