@@ -2,17 +2,18 @@ pipeline {
     agent any
 
     environment {
-        ARM_CLIENT_ID       = credentials('1d1d5103-ae27-428f-a37b-00b6b22003d5')
-        ARM_CLIENT_SECRET   = credentials('ARM_CLIENT_SECRET')
-        ARM_SUBSCRIPTION_ID = credentials('45d34f6c-1b53-4dbe-9035-4b2e38769161')
-        ARM_TENANT_ID       = credentials('d421cc8e-c9ec-4917-a7dd-bf2e6e77bb6b')
-    }
+    ARM_CLIENT_ID       = credentials('azure-client-id')
+    ARM_CLIENT_SECRET   = credentials('azure-client-secret')
+    ARM_SUBSCRIPTION_ID = credentials('azure-subscription-id')
+    ARM_TENANT_ID       = credentials('azure-tenant-id')
+    TF_VAR_admin_password = credentials('vm-admin-password')
+}
 
     stages {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR-USERNAME/Deployment-azure-environments.git'
+                git 'https://github.com/6267136444/Deployment-azure-environments.git'
             }
         }
 
