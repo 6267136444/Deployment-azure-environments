@@ -8,16 +8,6 @@ variable "resource_group_name" {
   type        = string
 }
 
-variable "vm_name" {
-  description = "Virtual machine name"
-  type        = string
-}
-
-variable "vm_size" {
-  description = "Virtual machine size"
-  type        = string
-}
-
 variable "admin_username" {
   description = "Admin username for VM"
   type        = string
