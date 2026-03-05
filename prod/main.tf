@@ -57,7 +57,7 @@ resource "azurerm_network_interface" "db_nic" {
 }
 
 module "web_server" {
-  source = "git::https://github.com/6267136444/terraform-azure-modules.git//modules/linux-vm?ref=main"
+  source = "../modules/linux-vm"
 
   vm_name             = "server-web"
   location            = var.location
@@ -71,7 +71,7 @@ module "web_server" {
 }
 
 module "db_server" {
-  source = "git::https://github.com/6267136444/terraform-azure-modules.git//modules/linux-vm?ref=main"
+  source = "../modules/linux-vm"
 
   vm_name             = "server-db"
   location            = var.location
