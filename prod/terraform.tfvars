@@ -1,5 +1,3 @@
 location            = "Central India"
-resource_group_name = "rg-prod-linuxvm"
-vm_name             = "prod-linux-vm"
-vm_size             = "Standard_D2s_v3"
+resource_group_name = "CCRH-RG"
 admin_username      = "azureuser"
