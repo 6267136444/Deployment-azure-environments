@@ -9,12 +9,12 @@ variable "resource_group_name" {
 }
 
 variable "admin_username" {
-  description = "Admin username for VM"
+  description = "VM admin username"
   type        = string
 }
 
 variable "admin_password" {
-  description = "Admin password for VM"
+  description = "VM admin password"
   type        = string
   sensitive   = true
 }
