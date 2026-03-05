@@ -76,7 +76,7 @@ module "db_server" {
   vm_name             = "server-db"
   location            = var.location
   resource_group_name = azurerm_resource_group.rg.name
-  vm_size             = "Standard_D4als_v6"
+  vm_size             = "Standard_D2as_v5"
 
   admin_username = var.admin_username
   admin_password = var.admin_password
